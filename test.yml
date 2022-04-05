@@ -1,0 +1,8 @@
+- name: install nginx
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Install a Nginx Package
+      yum:
+        name: nginx
+        state: present
